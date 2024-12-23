@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+    <script
+      src="https://kit.fontawesome.com/ee80e0cc52.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="tailwind.css" />
+  </head>
+  <body class="h-screen relative bg-blue-100">
+    <header>
+      <h1
+        id="date123"
+        class="text-xs md:text-xl font-semibold md:font-bold p-2"
+      >
+        December 24, Tuesday
+      </h1>
+      <h1 class="text-center text-2xl font-semibold my-5">Daily todo list</h1>
+      <nav class="text-xl">
+        <ul class="flex justify-around border-b border-slate-300">
+          <li class="text-blue-400">My Tasks</li>
+          <li><i class="fa-solid fa-plus"></i>New Tasks</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="">
+        <label for="task" class="flex my-2 align-baseline">
+            <input type="radio" name="radio" id="check" class="mx-2 md:mx-10">
+            <li class="list-none">Lorem ipsum dolor sit amet.</li>
+            <i class="fa-solid fa-pen-to-square mx-1 my-1"></i>
+            <i class="fa-solid fa-trash my-1" style="color: red;"></i>
+        </label>
+        <button class="absolute right-10 bottom-10 bg-blue-400 p-3 rounded-2xl text-2xl"><i class="fa-solid fa-plus"></i></button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
