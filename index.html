@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do App</title>
+    <link rel="stylesheet" href="style.css">
     <script
       src="https://kit.fontawesome.com/ee80e0cc52.js"
       crossorigin="anonymous"
@@ -22,18 +23,48 @@
       <nav class="text-xl">
         <ul class="flex justify-around border-b border-slate-300">
           <li class="text-blue-400">My Tasks</li>
-          <li><i class="fa-solid fa-plus"></i>New Tasks</li>
+          <li id="todoInputTask" class="cursor-pointer">
+            <i class="fa-solid fa-plus"></i>New Tasks
+          </li>
         </ul>
       </nav>
     </header>
+
+
     <div class="">
-        <label for="task" class="flex my-2 align-baseline">
-            <input type="radio" name="radio" id="check" class="mx-2 md:mx-10">
-            <li class="list-none">Lorem ipsum dolor sit amet.</li>
-            <i class="fa-solid fa-pen-to-square mx-1 my-1"></i>
-            <i class="fa-solid fa-trash my-1" style="color: red;"></i>
-        </label>
-        <button class="absolute right-10 bottom-10 bg-blue-400 p-3 rounded-2xl text-2xl"><i class="fa-solid fa-plus"></i></button>
+      <ul class="my-2 ml-6 sm:ml-10" id="todoList">
+        <!-- <li class="text-2xl">alif rayhan <span><i class="fa-solid fa-xmark"></i></span></li> -->
+      </ul>
+
+
+
+
+
+
+
+
+
+
+
+      <div
+        id="todoInputArea"
+        class="absolute bottom-10 rounded bg-white hidden"
+      >
+        <input
+          type="text"
+          name="todoInput"
+          id="todoInput"
+          class="rounded h-10 px-3 sm:w-96"
+        />
+        <i id="saveIcon" class="fa-solid fa-check mr-1 cursor-pointer"></i>
+      </div>
+
+      <button
+        id="todoInputButton"
+        class="absolute right-10 bottom-10 bg-blue-400 p-3 rounded-2xl text-2xl cursor-pointer"
+      >
+        <i class="fa-solid fa-plus"></i>
+      </button>
     </div>
 
     <script src="app.js"></script>
